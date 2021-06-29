@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import reviews from 'pages/Reviews/ducks/reducer';
+import reviewsState from 'pages/Reviews/ducks/reducer';
 
-const combinedReducer = combineReducers({ reviews });
+const combinedReducer = combineReducers({ reviewsState });
 
 const rootReducer = (state: any, action: { type: string }) => {
     return combinedReducer(state, action);

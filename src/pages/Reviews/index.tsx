@@ -1,5 +1,20 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
+import Review from "./types/review";
 
-const Reviews: FC<any> = () => { }
+interface ReviewsProps {
+  reviews: Review[];
+  fetchReviews: () => void;
+}
+
+const Reviews: FC<ReviewsProps> = ({ reviews, fetchReviews }) => {
+  useEffect(() => {
+      fetchReviews();
+    }, [ fetchReviews ]
+  )
+
+  return (
+    <div>{ JSON.stringify(reviews) }</div>
+  );
+}
 
 export default Reviews;
