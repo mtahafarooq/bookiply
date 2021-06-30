@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  src: local('SFProDisplay-Medium'), url(./assets/fonts/SFProDisplay-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: local('SFProDisplay-Regular'), url(./assets/fonts/SFProDisplay-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: local('SFProDisplay-Semibold'), url(./assets/fonts/SFProDisplay-Semibold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  src: local('SFProDisplay-Bold'), url(./assets/fonts/SFProDisplay-Bold.ttf) format('truetype');
+}
