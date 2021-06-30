@@ -1,19 +1,19 @@
-import React, { FC, useEffect } from 'react';
-import Review from "./types/review";
+import React, { FC } from 'react';
+import { ContentContainer, BackGroundImage, MainContainer } from "./styles";
+import ReviewsList from 'pages/Reviews/containers/reviews-list';
+import img from 'assets/images/background.png'
 
-interface ReviewsProps {
-  reviews: Review[];
-  fetchReviews: () => void;
-}
-
-const Reviews: FC<ReviewsProps> = ({ reviews, fetchReviews }) => {
-  useEffect(() => {
-      fetchReviews();
-    }, [ fetchReviews ]
-  )
+const Reviews: FC<any> = () => {
 
   return (
-    <div>{ JSON.stringify(reviews) }</div>
+    <MainContainer>
+      <BackGroundImage backgroundImage={img} />
+      <ContentContainer>
+        <div className={'propertyId'}>ID: 091021</div>
+        <div className={'propertyName'}>La Casa de las Flores</div>
+        <ReviewsList />
+      </ContentContainer>
+    </MainContainer>
   );
 }
 
