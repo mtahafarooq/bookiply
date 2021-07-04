@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import ReviewsList from "components/reviews/reviews-list";
 import { fetchReviewsAction } from "../ducks/actions";
 import { State } from "store/types";
 import { bindActionCreators } from "redux";
+import ReviewsContainer from "../../../components/reviews/reviews-container";
 
 const mapStateToProps = (state: State) => {
   return {
@@ -19,4 +19,4 @@ const mapDispatchToProps = (dispatch: any) => {
   );
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ReviewsList);
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewsContainer);

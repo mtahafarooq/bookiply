@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { ContentContainer, BackGroundImage, MainContainer } from "./styles";
-import ReviewsList from 'pages/Reviews/containers/reviews-list';
 import img from 'assets/images/background.png'
+import ReviewsContainer from "./containers/reviews-container";
 
 const Reviews: FC<any> = () => {
 
@@ -11,7 +11,7 @@ const Reviews: FC<any> = () => {
       <ContentContainer>
         <div className={'propertyId'}>ID: 091021</div>
         <div className={'propertyName'}>La Casa de las Flores</div>
-        <ReviewsList />
+        <ReviewsContainer />
       </ContentContainer>
     </MainContainer>
   );
